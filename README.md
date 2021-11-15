@@ -6,7 +6,7 @@ There are a variety of tools and methods to configure and manage IP settings. I 
 The first command you will get accustomed to is `Get-NetIPAddress` The information gained will look like this. 
 
 
-![](screen1.jpg)
+![PowerShell window showing how to find IP information.](screen1.jpg)
 
 If you are interested in only your IPv4 address you can use *-AddressFamily* and state IPv4.
 
