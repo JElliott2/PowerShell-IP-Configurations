@@ -6,12 +6,12 @@ There are a variety of tools and methods to configure and manage IP settings. I 
 The first command you will get accustomed to is `Get-NetIPAddress` The information gained will look like this. 
 
 
-![PowerShell window showing how to find IP information.](screen1.jpg)
+![PowerShell window showing how to find IP information.](screen1.png)
 
 If you are interested in only your IPv4 address you can use *-AddressFamily* and state IPv4.
 
 `Get-NetIPAddress -AddressFamily IPv4`
-![](imagename.jpg)
+![](screen2.png)
 
 
 Once you have learned the IP address and the name of the interface, you can set that interface with a new IP. To do so, use the *-InterfaceAlias* of the network adapter as below.
@@ -27,3 +27,5 @@ These tools would allow you to fix issues with conflicting IPs and to manually s
 If problems persist and you cannot get the IP address settings working correctly, you may need to reset your IP settings. To do so within PowerShell, you can use the cmd line inputs: *ipconfig /release* which releases the currently assigned IP and *ipconfig /renew* which will assign a new IP using DHCP. Note that if you have a preferred IP it will be set to the preferred address.
 
 You can also verify your current IP address using the settings in Windows.
+
+![How to find the setting to verify IP](Animation.gif)
